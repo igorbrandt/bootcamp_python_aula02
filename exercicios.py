@@ -98,9 +98,67 @@ resultado_diferenca = numero_1 != numero_2
 print(resultado_diferenca)
 
 # #### try-except e if
-
 # 21: Conversor de Temperatura
+try:
+    temperatura_celcius = float(input("Digite uma tempertura em graus Celcius: "))
+    temperatura_far = (temperatura_celcius * 1.8) + 32
+    print(temperatura_far)
+except ValueError (e):
+    print(e)
+except:
+    print("Algo deu errado")
+
 # 22: Verificador de Palíndromo
+entrada = input("Digite uma palavra ou frase: ")
+if isinstance(entrada, str):
+    entrada_formatada = entrada.replace(" ", "").lower()
+    if entrada_formatada == entrada_formatada[::-1]:
+        print("É um palídromo")
+    else:
+        print("Não é um palídromo")
+    
 # 23: Calculadora Simples
+try:
+    num_1 = float(input("Digite um número: "))
+    num_2 = float(input("Digite outro número: "))
+    operador = (input("Escolha um operador, (+, -, * e /) : "))
+    if operador == "+":
+        resultado = num_1 + num_2
+    elif operador == "-":
+        resultado = num_1 - num_2
+    elif operador == "*":
+        resultado = num_1 * num_2
+    elif operador == "/":
+        resultado = num_1 / num_2
+    else:
+        print("Operador inválido ou divisão por zero.")
+    print(f"O resultado é: {resultado}")
+except:
+    print("Erro: entrada inválida.")
+
 # 24: Classificador de Números
+try:
+    num = int(input("Digite um número inteiro: "))
+    if num % 2 == 0:
+        print("O num é par")
+    else:
+        print("O num é ímpar")
+    if num > 0:
+        print("O num é positivo")
+    elif num == 0:
+        print("O num é zero")
+    else:
+        print("O num é negativo")
+except:
+    print("Você não digitou um número inteiro")
+    
 # 25: Conversão de Tipo com Validação
+entrada = input("Digite uma sequência de números inteiros separados por vírgula: ")
+entrada_split = entrada.split(",")
+num_int = []
+try:
+    for num in entrada_split:
+        num_int.append(int(num.strip()))
+    print(f"Lista de números inteiros: {num_int}")
+except ValueError:
+    print("Erro: certifique-se de que todos os elementos são números inteiros válidos.")
