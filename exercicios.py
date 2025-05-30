@@ -17,8 +17,10 @@ try:
     numero_1 = int(input("Digite o primeiro número: "))
     numero_2 = int(input("Digite o segundo número: "))
     print(numero_1 // numero_2)
-except:
-    print("Tente novamente ")
+except ZeroDivisionError:
+    print("Não é posível fazer divisão por zero ")
+except KeyboardInterrupt:
+    print("Você não inseriu um número ")
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 numero_1 = int(input("Digite o primeiro número: "))
