@@ -13,9 +13,12 @@ numero_2 = int(input("Digite o segundo número: "))
 print(numero_1 * numero_2)
 
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
-numero_1 = int(input("Digite o primeiro número: "))
-numero_2 = int(input("Digite o segundo número: "))
-print(numero_1 // numero_2)
+try:
+    numero_1 = int(input("Digite o primeiro número: "))
+    numero_2 = int(input("Digite o segundo número: "))
+    print(numero_1 // numero_2)
+except:
+    print("Tente novamente ")
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 numero_1 = int(input("Digite o primeiro número: "))
