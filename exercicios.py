@@ -27,7 +27,6 @@ numero_1 = int(input("Digite o primeiro número: "))
 print(numero_1 * numero_1)
 
 # #### Números de Ponto Flutuante (`float`)
-
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
 numero_1 = float(input("Digite o primeiro número: "))
 numero_2 = float(input("Digite o segundo número: "))
@@ -49,7 +48,6 @@ area = 3.14159265 * (raio ** 2)
 print(f"A área do círculo é: {area}")
       
 # #### Strings (`str`)
-
 # 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
 string = input("Escreva uma palavra: ")
 print(string.upper())
@@ -69,14 +67,35 @@ resultado = print(str_1 + str_2)
 print(resultado)
 
 # #### Booleanos (`bool`)
-
 # 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
-
+expressao_1 = True
+expressao_2 = False
+resultado = expressao_1 and expressao_2
+print(f"O resultado do AND lógico é {resultado}")
 
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
+expressao_1 = True
+expressao_2 = False
+resultado = expressao_1 or expressao_2
+print(f"O resultado do OR lógico é {resultado}")
+
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+expressao = input("Insira True ou False: ")
+resultado = expressao.lower() == "true"
+invertido = not resultado
+print(invertido)
+
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+numero_1 = float(input("Digite um número: "))
+numero_2 = float(input("digite outro número: "))
+resultado_diferenca = numero_1 == numero_2
+print(resultado_diferenca)
+
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+numero_1 = float(input("Digite um número: "))
+numero_2 = float(input("digite outro número: "))
+resultado_diferenca = numero_1 != numero_2
+print(resultado_diferenca)
 
 # #### try-except e if
 
