@@ -103,7 +103,7 @@ try:
     temperatura_celcius = float(input("Digite uma tempertura em graus Celcius: "))
     temperatura_far = (temperatura_celcius * 1.8) + 32
     print(temperatura_far)
-except ValueError (e):
+except ValueError as e:
     print(e)
 except:
     print("Algo deu errado")
