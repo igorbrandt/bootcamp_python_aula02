@@ -1,30 +1,35 @@
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
 numero_1 = int(input("Digite o primeiro número: "))
 numero_2 = int(input("Digite o segundo número: "))
-print(numero_1 + numero_2)
+resultado = numero_1 + numero_2
+print(resultado)
 
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
-numero_1 = int(input("Digite o primeiro número: "))
-print(numero_1 % 5)
+numero_1 = int(input("Digite um número: "))
+resultado = numero_1 % 5
+print(resultado)
 
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 numero_1 = int(input("Digite o primeiro número: "))
 numero_2 = int(input("Digite o segundo número: "))
-print(numero_1 * numero_2)
+resultado = numero_1 * numero_2
+print(resultado)
 
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 try:
     numero_1 = int(input("Digite o primeiro número: "))
     numero_2 = int(input("Digite o segundo número: "))
-    print(numero_1 // numero_2)
+    resultado = numero_1 // numero_2
+    print(resultado)
 except ZeroDivisionError:
     print("Não é posível fazer divisão por zero ")
 except KeyboardInterrupt:
     print("Você não inseriu um número ")
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
-numero_1 = int(input("Digite o primeiro número: "))
-print(numero_1 * numero_1)
+num = int(input("Digite um número: "))
+resultado = num ** 2
+print(resultado)
 
 # #### Números de Ponto Flutuante (`float`)
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
