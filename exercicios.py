@@ -19,16 +19,30 @@ print(numero_1 // numero_2)
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 numero_1 = int(input("Digite o primeiro número: "))
-print(numero_1 ^ 2)
+print(numero_1 * numero_1)
 
 # #### Números de Ponto Flutuante (`float`)
 
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
+numero_1 = float(input("Digite o primeiro número: "))
+numero_2 = float(input("Digite o segundo número: "))
+print(numero_1 + numero_2)
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
+numero_1 = float(input("Digite o primeiro número: "))
+numero_2 = float(input("Digite o segundo número: "))
+print((numero_1 + numero_2)/2)
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+numero_1 = float(input("Digite o primeiro número: "))
+numero_2 = float(input("Digite o segundo número: "))
+print(numero_1 ** numero_2)
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+numero_1 = float(input("Digite a temperatura em Celsius: "))
+print(numero_1 * 1.8 + 32)
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
-
+raio = float(input("Digite o raio do círculo: "))
+area = 3.14159265 * (raio * raio)
+print(f"A área do círculo é: {area}")
+      
 # #### Strings (`str`)
 
 # 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
