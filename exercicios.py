@@ -40,7 +40,7 @@ numero_1 = float(input("Digite a temperatura em Celsius: "))
 print(numero_1 * 1.8 + 32)
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 raio = float(input("Digite o raio do círculo: "))
-area = 3.14159265 * (raio * raio)
+area = 3.14159265 * (raio ** 2)
 print(f"A área do círculo é: {area}")
       
 # #### Strings (`str`)
